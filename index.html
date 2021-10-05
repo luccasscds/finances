@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finances</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/modal.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+
+    <!-- SCRIPTS -->
+    <script src="/assets/scripts/main.js" defer></script>
+
+</head>
+<body>
+    <div id="index">
+        <main>
+            <section>
+                <div class="graphic">
+                    <h1 class="title">
+                        <small>Total</small>
+                        <p>R$ 1.500,00</p>
+                    </h1>
+                    <div class="donut-chart">
+                        <svg class="five" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <circle class="donut-piece" r="70" cy="81" cx="81" stroke-width="8" stroke="#CCC5B9" fill="none"/>
+                            </g>
+                        </svg>
+                        <svg class="ten" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <circle class="donut-piece" r="70" cy="81" cx="81" stroke-width="8" stroke="#403D39" fill="none"/>
+                            </g>
+                        </svg>
+                        <svg class="thirty" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <circle class="donut-piece" r="70" cy="81" cx="81" stroke-width="8" stroke="#EB5E28" fill="none"/>
+                            </g>
+                        </svg>
+                        <svg class="fifty-five" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <circle class="donut-piece" r="70" cy="81" cx="81" stroke-width="8" stroke="#252422" fill="none"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <button class="edit-salary">
+                    <figure>
+                        <img src="/assets/images/edit-icon.svg" alt="editar o salário">
+                    </figure>
+                </button>
+            </section>
+            <section>
+                <div class="description">
+                    <div class="description-left">
+                        <span>
+                            <div class="circle" style="background-color: var(--black);"></div>
+                            <p>Contas necessárias</p>
+                        </span>
+                        <span>
+                            <div class="circle" style="background-color: #d1450f;"></div>
+                            <p>Investimento</p>
+                        </span>
+                        <span>
+                            <div class="circle" style="background-color: var(--black-grany);"></div>
+                            <p>Passe livre</p>
+                        </span>
+                        <span>
+                            <div class="circle" style="background-color: var(--grany);"></div>
+                            <p>Investimento a longo prazo</p>
+                        </span>
+                    </div>
+                    <div class="description-right">
+                        <p>R$ 750,00</p>
+                        <p>R$ 300,00</p>
+                        <p>R$ 140,00</p>
+                        <p>R$ 60,00</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+        <section class="modal-background">
+            <div class="modal-main">
+                <button class="close"></button>
+                <label class="sr-only" for="salary">Digite seu salário</label>
+                <input id="salary" name="salary" type="number" placeholder="Digite seu salário">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
