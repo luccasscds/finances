@@ -1,0 +1,109 @@
+html{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+html, body, #index, main {
+    height: 100%;
+}
+
+#index main {
+    background-color: var(--orange);
+    margin: 0 2rem;
+    border-radius: 1rem 1rem 0 0;
+    padding: 0 clamp(1rem, 4vw, 2rem);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* ============================
+    PIZZA GRAPHIC
+================================ */
+.graphic {
+    height: 160px;
+    width: 160px;
+    position: relative;
+    border-radius: 6rem;
+    margin-top: 1rem;
+    background-color: var(--white);
+}
+
+.graphic .title, .donut-chart, .donut-chart svg {
+    position: absolute;
+}
+
+.graphic .title {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+}
+
+.donut-chart svg{
+    transform: rotate(-90deg);
+}
+
+.donut-piece {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+.fifty-five .donut-piece {animation: fifty-five 1.5s ease-out forwards;}
+.thirty .donut-piece {animation: thirty 1.5s ease-out forwards;}
+.ten .donut-piece {animation: ten 1.5s ease-out forwards;}
+.five .donut-piece {animation: five 1.5s ease-out forwards;}
+
+.edit-salary {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.edit-salary figure img {
+    width: clamp(22px,4vw,35px);
+}
+
+section + section {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 3px solid;
+}
+
+.description {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: clamp(12px,4vw,1.8rem);
+    position: relative;
+}
+
+.description-left span {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: clamp(12px, 4vw, 25px);
+    height: clamp(12px, 4vw, 25px);
+    background-color: var(--black);
+    border-radius: 1rem;
+    margin-right: 12px;
+}
+
+/* ============================
+    ANIMATION
+================================ */
+@keyframes fifty-five {to {stroke-dashoffset: 198;}}
+@keyframes thirty {to {stroke-dashoffset: 132;}}
+@keyframes ten {to {stroke-dashoffset: 44;}}
+@keyframes five {to {stroke-dashoffset: 0;}}

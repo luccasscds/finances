@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+
+    --orange: #EB5E28;
+    --black: #252422;
+    --black-grany: #403D39;
+    --grany: #CCC5B9;
+    --white: #E5E5E5;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    border: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-bottom: 0;
+}
+img,button {cursor: pointer;}
