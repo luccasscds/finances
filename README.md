@@ -22,9 +22,9 @@ Finances é uma aplicação para separar o dinheiro em 4 partes:
 
 ## 🛠 Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
-- React-native
-- Node js
-- Expo
+- HTML
+- CSS
+- Javascript
 
 ## 🔭 Visualizar
 Você pode ver o projeto através desse [link](https://competent-sammet-fd7ae5.netlify.app/).
