@@ -13,4 +13,8 @@ export function slice() {
 
 export function storage(salary){
     localStorage.setItem('currentSalary', salary);
-}; 
+};
+
+export function formatMoney(int) {
+    return int.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.");
+}
