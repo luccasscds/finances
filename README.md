@@ -33,7 +33,7 @@ Você pode ver o projeto através desse [link](https://competent-sammet-fd7ae5.n
 Clone o projeto e acesse a pasta do mesmo.
 
 ```bash
-git clone https://github.com/luccasscds/insider-react-native-4.git
+git clone https://github.com/luccasscds/finances.git
 cd insider-react-native-4/
 # e depois abra o index
 ```
