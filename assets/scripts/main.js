@@ -25,6 +25,8 @@ input.addEventListener('keypress', (event) => {
         setDomValues(salary,requiredAccount,investment,freePass,books);
 
         storage(salary);
+        
+        input.blur();
         toggleModal();
     };
 });
