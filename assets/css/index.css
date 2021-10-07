@@ -44,6 +44,7 @@ html, body, #index, main {
     justify-content: center;
     align-items: center;
     color: var(--black);
+    font-size: clamp(16px,4vw,22px);
 }
 
 .donut-chart svg{
