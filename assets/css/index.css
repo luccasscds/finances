@@ -78,7 +78,7 @@ section + section {
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     border-top: 3px solid;
-    overflow: visible auto;
+    overflow: auto hidden;
 }
 
 .description {
