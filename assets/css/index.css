@@ -9,6 +9,7 @@ html, body, #index, main {
 
 #index main {
     background-color: var(--orange);
+    background-image: linear-gradient(to bottom, transparent, var(--orange), var(--black));
     margin: 0 2rem;
     border-radius: 1rem 1rem 0 0;
     padding: 0 clamp(1rem, 4vw, 2rem);
