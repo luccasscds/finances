@@ -78,9 +78,11 @@ section + section {
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     border-top: 3px solid;
+    overflow: visible auto;
 }
 
 .description {
+    min-width: 250px;
     display: flex;
     justify-content: space-around;
     align-items: center;
