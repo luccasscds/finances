@@ -41,12 +41,9 @@ html, body, #index, main {
 
 .graphic .title {
     width: calc(100% - 56px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: var(--white);
     font-size: clamp(16px,4vw,22px);
+    text-align: center;
 }
 
 .title p { width: 100%; }
@@ -111,14 +108,10 @@ section + section {
 .description {
     min-width: 202px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-size: clamp(12px,4vw,1.8rem);
     position: relative;
-}
-
-.description-left, .description-right {
-    width: 49%;
 }
 
 .description-left span {
