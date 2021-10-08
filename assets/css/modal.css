@@ -52,17 +52,21 @@
     align-items: center;
 }
 
-.modal-main::before {
-    content: "R$";
+.symbol{
+    width: auto;
+    background-color: white;
     color: var(--orange);
+    padding: 1rem 0 1rem 10px;
+    border-radius: 0 0 0 1rem;
     font-weight: bold;
-    position: absolute;
-    left: 20px;
+    text-overflow: initial;
+    overflow: initial;
+    white-space: normal;
 }
 
 input#salary {
-    padding: 1rem 1.7rem;
-    border-radius: 0 1rem;
+    padding: 1rem 0 1rem 10px;
+    border-radius: 0 1rem 0 0;
     font-size: 1rem;
     font-weight: bold;
     outline-color: var(--orange);
