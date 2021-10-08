@@ -26,8 +26,8 @@ input.addEventListener('keypress', (event) => {
 
         storage(salary);
         
-        input.blur();
         toggleModal();
+        input.blur();
     };
 });
 
