@@ -22,3 +22,9 @@
     border-bottom: 0;
 }
 img,button {cursor: pointer;}
+p {
+    width: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

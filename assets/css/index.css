@@ -8,9 +8,10 @@ html, body, #index, main {
 }
 
 #index main {
+    min-height: 23rem;
     background-color: var(--orange);
     background-image: linear-gradient(to bottom, transparent, var(--orange), var(--black));
-    margin: 0 2rem;
+    margin: 16px clamp(16px,4vw,2rem) 0;
     border-radius: 1rem 1rem 0 0;
     padding: 0 clamp(1rem, 4vw, 2rem);
 
@@ -24,12 +25,14 @@ html, body, #index, main {
     PIZZA GRAPHIC
 ================================ */
 .graphic {
-    height: 160px;
-    width: 160px;
+    height: 200px;
+    width: 200px;
     position: relative;
     border-radius: 6rem;
     margin-top: 1rem;
-    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .graphic .title, .donut-chart, .donut-chart svg {
@@ -37,23 +40,46 @@ html, body, #index, main {
 }
 
 .graphic .title {
-    width: inherit;
-    height: inherit;
+    width: calc(100% - 56px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--black);
+    color: var(--white);
     font-size: clamp(16px,4vw,22px);
+}
+
+.title p { width: 100%; }
+
+.circle-border {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 26px solid var(--white);
+    box-sizing: border-box;
+}
+
+.donut-chart {
+    width: 100%;
+    height: 100%;
 }
 
 .donut-chart svg{
     transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
 }
 
 .donut-piece {
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
+    width: 100%;
+    cy: 50%;
+    cx: 50%;
+    r: calc(87%/2);
+    stroke-width: 15;
+    fill: none;
+
+    stroke-dasharray: 547;
+    stroke-dashoffset: 547;
     stroke-linecap: round;
 }
 
@@ -83,7 +109,7 @@ section + section {
 }
 
 .description {
-    min-width: 250px;
+    min-width: 202px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -91,9 +117,21 @@ section + section {
     position: relative;
 }
 
+.description-left, .description-right {
+    width: 49%;
+}
+
 .description-left span {
     display: flex;
     align-items: center;
+}
+
+.description span p {
+    padding-left: 25px;
+}
+
+.description-right p {
+    width: initial;
 }
 
 .circle {
@@ -101,7 +139,8 @@ section + section {
     height: clamp(12px, 4vw, 25px);
     background-color: var(--black);
     border-radius: 1rem;
-    margin-right: 12px;
+    position: absolute;
+    left: 0;
 }
 
 /* ============================
