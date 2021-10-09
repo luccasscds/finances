@@ -1,5 +1,9 @@
 export function get(){
-    return document.querySelector('#salary').value;
+    const value = Number(document.querySelector('#salary').value);
+
+    if(value < 0) return Math.abs(value);
+
+    return value === 0 || value <= 1_000_000 ? value : false; 
 };
 
 export function slice() {

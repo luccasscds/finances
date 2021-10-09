@@ -1,0 +1,35 @@
+.error-message {
+    background-color: #ed5565;
+    border-color: #e8273b;
+    padding: 8px;
+    position: fixed;
+    border-radius: 6px;
+    top: 5px;
+    right: 0;
+    user-select: none;
+    visibility: hidden;
+    opacity: 0;
+    /* animation: endMessage 1.5s cubic-bezier(0.74, 1.55, 0, 0.98); */
+}
+
+.error-message.on {
+    visibility: visible;
+    opacity: 1;
+    animation: startMessage 3s cubic-bezier(0.74, 1.55, 0, 0.98);
+}
+
+.error-message.off {
+    animation: endMessage 1.5s cubic-bezier(0.74, 1.55, 0, 0.98);
+}
+
+/* *********************
+    ANIMATION BOX ERROR MESSAGE
+************************* */
+@keyframes startMessage {
+    from {transform: translateX(268px);}
+    to {transform: translateX(0);}
+}
+@keyframes endMessage {
+    from {transform: translateX(0); visibility: visible; opacity: 1;}
+    to {transform: translateX(-100vw); opacity: 0; visibility: hidden;}
+}
