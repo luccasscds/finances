@@ -1,16 +1,15 @@
 export function get(){
     const value = Number(document.querySelector('#salary').value);
     if(value < 0) return Math.abs(value);
-    if(value === 0 || value <= 1_000_000) return value;
     return value === 0 || value <= 1_000_000 ? value : false; 
 };
 
 export function slice() {
     const salary = get();
-    const requiredAccount = salary * 0.55;
-    const investment = salary * 0.3;
-    const freePass = salary * 0.1;
-    const books = salary * 0.05;
+    const requiredAccount = Number((salary * 0.55).toFixed('3'));
+    const investment = Number((salary * 0.3).toFixed('3'));
+    const freePass = Number((salary * 0.1).toFixed('3'));
+    const books = Number((salary * 0.05).toFixed('3'));
     return {salary, requiredAccount, investment, freePass, books};
 };
 
